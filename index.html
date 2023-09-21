@@ -4,9 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=0, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
+   <div class="main-container">
+        <!-- manu bar -->
+        <header>
+            <div class="wrapper">
+                <div class="manu-section">
+                    <div class="logo">
+                        <img src="assets/image/Logo.png" alt="Logo">
+                    </div>
+                    <div class="manu-item">
+                        <a class="manu-item-text" href="#">Home</a>
+                        <a class="manu-item-text" href="#">Select theame</a>
+                        <a class="manu-item-text" href="#">Subscribe</a>
+                        <a class="manu-item-text" href="#">Contact us</a>
+                    </div>
+                    <div class="manu-buttons">
+                        <button class="btn-manu-log-in">Log in</button>
+                        <button class="btn-manu-dark">Sing up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- search bar -->
+        <div class="search-bar">
+            <div class="input-container">
+                <input class="search-box" type="text" placeholder="Enter City Name">
+            </div>
+            <div>
+                <button class="btn-search" id="btn-search">Find Location</button>
+            </div>
+        </div>
+        <!-- main weather panel -->
+        <div class="main-ewather-panel">
+            <div class="crrunt-weather-panel">
+                <h4 class="Current-weather-title">Today</h4>
+                <div class="current-cundition-img-container">
+                    <img class="current-cundition-img" src="assets/64x64/day/116.png" alt="Current weather img">
+                </div>
+                <div class="seach-location" id="seach-location">Colombo</div>
+                <div class="current-location-avg-temp">
+                    <div id="current-location-avg-temp">25</div>
+                    <div class="unit-temp">°C</div>
+                </div>
+                <div class="current-weather-status" id="current-weather-status">Partially Cloudy</div>
+            </div>
+            <div class="date-time-panel">
+                <div>
+                    <span id="date-container"></span>
+                </div>
+                <div>
+                    <span id="time-container"></span>
+                </div>
+            </div>
+            <div class="crrunt-weather-sub-panel">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="Current-humidity">
+                                <h4 class="crrunt-weather-sub-panel-sub-title">Hiumidity</h4>
+                                <img src="assets/image/humidity.png" alt="hiumidity img">
+                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-humidity-value"></h3><h3 class="crrunt-weather-sub-panel-sub-value">%</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Current-feels-like">
+                                <h4 class="crrunt-weather-sub-panel-sub-title">Feels like</h4>
+                                <img src="assets/image/feels-like.png" alt="Feels like img">
+                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-feels-like-value"></h3><h3 class="defoult-unit-temp"></h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Current-wind-spreed">
+                                <h4 class="crrunt-weather-sub-panel-sub-title">Wind spreed</h4>
+                                <img src="assets/image/wind-spreed.png" alt="wind spreed img">
+                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-wind-spreed-value"></h3><h3 class="defoult-unit-wind-spreed"></h3>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="Current-pressure">
+                                <h4 class="crrunt-weather-sub-panel-sub-title">Pressure</h4>
+                                <img src="assets/image/pressur.png" alt="pressure img">
+                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-pressure-value"></h3><h3 class="crrunt-weather-sub-panel-sub-value">Pa</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Current-uv-index">
+                                <h4 class="crrunt-weather-sub-panel-sub-title">UV Index</h4>
+                                <img src="assets/image/uv.png" alt="uv index img">
+                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-uv-index-value"></h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="Current-presipitation">
+                                <h4 class="crrunt-weather-sub-panel-sub-title">Presipitation</h4>
+                                <img src="assets/image/rain.png" alt="presipitation img">
+                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-presipitation-value"></h3><h3 class="defoult-unit-presipitation"></h3>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <img src="assets/image/devide bar 1.png" alt="devide bar img">
+        </div>
+   </div>
     
     <script src="scripts/main.js"></script>
 </body>
