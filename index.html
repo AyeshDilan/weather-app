@@ -62,60 +62,249 @@
                     <span id="time-container"></span>
                 </div>
             </div>
+            <!-- humidity sub weather panel -->
             <div class="crrunt-weather-sub-panel">
                 <table>
                     <tr>
                         <td>
-                            <div class="Current-humidity">
-                                <h4 class="crrunt-weather-sub-panel-sub-title">Hiumidity</h4>
-                                <img src="assets/image/humidity.png" alt="hiumidity img">
-                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-humidity-value"></h3><h3 class="crrunt-weather-sub-panel-sub-value">%</h3>
+                            <div class="crrunt-weather-sub-panel-container">
+                                <div class="crrunt-weather-sub-panel-sub-title">Humidity</div>
+                                <div class="current-weather-sub-penel-img-container">
+                                    <img class="current-weather-sub-penel-img" src="assets/image/humidity.png" alt="hiumidity img">
+                                </div>
+                                <div class="crrunt-weather-sub-panel-humidity">
+                                    <div id="current-location-humidity">25</div>
+                                    <div class="unit-catogary">%</div>
+                                </div>
                             </div>
                         </td>
+                        <!-- feels like sub weather panel -->
                         <td>
-                            <div class="Current-feels-like">
-                                <h4 class="crrunt-weather-sub-panel-sub-title">Feels like</h4>
-                                <img src="assets/image/feels-like.png" alt="Feels like img">
-                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-feels-like-value"></h3><h3 class="defoult-unit-temp"></h3>
+                            <div class="crrunt-weather-sub-panel-container">
+                                <div class="crrunt-weather-sub-panel-sub-title">Feels like</div>
+                                <div class="current-weather-sub-penel-img-container">
+                                    <img class="current-weather-sub-penel-img" src="assets/image/feels-like.png" alt="hiumidity img">
+                                </div>
+                                <div class="crrunt-weather-sub-panel-feels-like">
+                                    <div id="current-location-avg-temp">25</div>
+                                    <div class="unit-catogary">°C</div>
+                                </div>
                             </div>
                         </td>
+                        <!-- win speed sub weather panel -->
                         <td>
-                            <div class="Current-wind-spreed">
-                                <h4 class="crrunt-weather-sub-panel-sub-title">Wind spreed</h4>
-                                <img src="assets/image/wind-spreed.png" alt="wind spreed img">
-                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-wind-spreed-value"></h3><h3 class="defoult-unit-wind-spreed"></h3>
+                            <div class="crrunt-weather-sub-panel-container">
+                                <div class="crrunt-weather-sub-panel-sub-title">Wind speed</div>
+                                <div class="current-weather-sub-penel-img-container">
+                                    <img class="current-weather-sub-penel-img" src="assets/image/wind-spreed.png" alt="hiumidity img">
+                                </div>
+                                <div class="crrunt-weather-sub-panel-win-speed">
+                                    <div id="current-location-win-speed">25</div>
+                                    <div class="unit-catogary">km/h</div>
+                                </div>
                             </div>
                         </td>
                     </tr>
+                    <!-- air pressure sub weather panel -->
                     <tr>
                         <td>
-                            <div class="Current-pressure">
-                                <h4 class="crrunt-weather-sub-panel-sub-title">Pressure</h4>
-                                <img src="assets/image/pressur.png" alt="pressure img">
-                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-pressure-value"></h3><h3 class="crrunt-weather-sub-panel-sub-value">Pa</h3>
+                            <div class="crrunt-weather-sub-panel-container">
+                                <div class="crrunt-weather-sub-panel-sub-title">Air pressure</div>
+                                <div class="current-weather-sub-penel-img-container">
+                                    <img class="current-weather-sub-penel-img" src="assets/image/pressur.png" alt="hiumidity img">
+                                </div>
+                                <div class="crrunt-weather-sub-panel-air-pressure">
+                                    <div id="current-location-air-pressure">25</div>
+                                    <div class="unit-catogary">Pa</div>
+                                </div>
                             </div>
                         </td>
+                        <!-- ui index sub weather panel -->
                         <td>
-                            <div class="Current-uv-index">
-                                <h4 class="crrunt-weather-sub-panel-sub-title">UV Index</h4>
-                                <img src="assets/image/uv.png" alt="uv index img">
-                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-uv-index-value"></h3>
+                            <div class="crrunt-weather-sub-panel-container">
+                                <div class="crrunt-weather-sub-panel-sub-title">UV Index</div>
+                                <div class="current-weather-sub-penel-img-container">
+                                    <img class="current-weather-sub-penel-img" src="assets/image/uv.png" alt="hiumidity img">
+                                </div>
+                                <div class="crrunt-weather-sub-panel-uv-index">
+                                    <div id="current-location-uv-index">25</div>
+                                    <div class="unit-catogary"></div>
+                                </div>
                             </div>
                         </td>
+                        <!-- precipitation sub weather panel -->
                         <td>
-                            <div class="Current-presipitation">
-                                <h4 class="crrunt-weather-sub-panel-sub-title">Presipitation</h4>
-                                <img src="assets/image/rain.png" alt="presipitation img">
-                                <h3 class="crrunt-weather-sub-panel-sub-value" id="Current-presipitation-value"></h3><h3 class="defoult-unit-presipitation"></h3>
+                            <div class="crrunt-weather-sub-panel-container">
+                                <div class="crrunt-weather-sub-panel-sub-title">Precipitation</div>
+                                <div class="current-weather-sub-penel-img-container">
+                                    <img class="current-weather-sub-penel-img" src="assets/image/rain.png" alt="hiumidity img">
+                                </div>
+                                <div class="crrunt-weather-sub-panel-precipitation">
+                                    <div id="current-location-precipitation">25</div>
+                                    <div class="unit-catogary">mm</div>
+                                </div>
                             </div>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
+        <!-- devide bar one -->
         <div>
-            <img src="assets/image/devide bar 1.png" alt="devide bar img">
+            <img class="diide-bar-1" src="assets/image/devide bar 1.png" alt="devide bar img">
         </div>
+        <!-- emberded map -->
+        <div class="search-map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26643.92389078727!2d79.85452344353781!3d6.933204600261033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1695373450702!5m2!1sen!2slk" ></iframe>
+        </div>
+        <!-- current sunrise and sunset time -->
+        <div class="sun-rise-set-container">
+            <div class="sun-rise-set-primary-container">
+                <div class="sun-rise-set-inner-container">
+                    <div class="sun-rise-set-inner-container-secondory">
+                        <img class="current-sun-rise-set-img" src="assets/image/sunrise.png" />
+                        <div class="current-sun-rise-set-title">sunrise</div>
+                        <div id="current-sun-rise-time" class="current-sun-rise-set-time">05.58 am</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sun-rise-set-primary-container">
+                <div class="sun-rise-set-inner-container">
+                    <div class="sun-rise-set-inner-container-secondory">
+                        <img class="current-sun-rise-set-img" src="assets/image/sunset.png" />
+                        <div class="current-sun-rise-set-title">sunset</div>
+                        <div id="current-sun-set-time" class="current-sun-rise-set-time">05.58 am</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- current sunrise and sunset time -->
+        <div class="sun-rise-set-container">
+            <div class="sun-rise-set-primary-container">
+                <div class="sun-rise-set-inner-container">
+                    <div class="sun-rise-set-inner-container-secondory">
+                        <img class="current-sun-rise-set-img" src="assets/image/sunrise.png" />
+                        <div class="current-sun-rise-set-title">sunrise</div>
+                        <div id="current-sun-rise-time" class="current-sun-rise-set-time">05.58 am</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sun-rise-set-primary-container">
+                <div class="sun-rise-set-inner-container">
+                    <div class="sun-rise-set-inner-container-secondory">
+                        <img class="current-sun-rise-set-img" src="assets/image/sunset.png" />
+                        <div class="current-sun-rise-set-title">sunset</div>
+                        <div id="current-sun-set-time" class="current-sun-rise-set-time">05.58 am</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- current moonrise and moonset time -->
+        <div class="moon-rise-set-container">
+            <div class="moon-rise-set-primary-container">
+                <div class="moon-rise-set-inner-container">
+                    <div class="moon-rise-set-inner-container-secondory">
+                        <img class="current-moon-rise-set-img" src="assets/image/moonrise.png" />
+                        <div class="current-moon-rise-set-title">moonrise</div>
+                        <div id="current-moon-rise-time" class="current-moon-rise-set-time">05.58 am</div>
+                    </div>
+                </div>
+            </div>
+            <div class="moon-rise-set-primary-container">
+                <div class="moon-rise-set-inner-container">
+                    <div class="moon-rise-set-inner-container-secondory">
+                        <img class="current-moon-rise-set-img" src="assets/image/moonset.png" />
+                        <div class="current-moon-rise-set-title">moonset</div>
+                        <div id="current-moon-set-time" class="current-moon-rise-set-time">05.58 am</div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- devide bar one -->
+        <div>
+            <img class="diide-bar-2" src="assets/image/devide bar 1.png" alt="devide bar img">
+        </div> 
+        <!-- The next few hours -->
+        <div class="next-few-hours-main-container">
+            <div class="next-few-hours-title">The next few hours</div>
+            <div class="next-few-hours-primary-container">
+                <div class="next-one-hours-sub-container">
+                    <div class="next-few-hours-sub-container-two">
+                        <div class="next-few-hours-sub-title" id="after-one-hour">9.00 am</div>
+                        <img class="next-few-hours-sub-img" id="after-one-hour-image" src="assets/64x64/day/176.png" alt="after one hour img">
+                        <div class="next-few-hours-sub-temp" id="after-one-hour-avg-temp">25°C</div>
+                        <div class="next-few-hours-sub-status" id="after-one-hour-status">Sunny</div>
+                    </div>
+                </div>
+            </div>
+            <div class="next-few-hours-primary-container">
+                <div class="next-two-hours-sub-container">
+                    <div class="next-few-hours-sub-container-two">
+                        <div class="next-few-hours-sub-title" id="after-one-hour">9.00 am</div>
+                        <img class="next-few-hours-sub-img" id="after-one-hour-image" src="assets/64x64/day/176.png" alt="after one hour img">
+                        <div class="next-few-hours-sub-temp" id="after-one-hour-avg-temp">25°C</div>
+                        <div class="next-few-hours-sub-status" id="after-one-hour-status">Sunny</div>
+                    </div>
+                </div>
+            </div>
+            <div class="next-few-hours-primary-container">
+                <div class="next-three-hours-sub-container">
+                    <div class="next-few-hours-sub-container-two">
+                        <div class="next-few-hours-sub-title" id="after-one-hour">9.00 am</div>
+                        <img class="next-few-hours-sub-img" id="after-one-hour-image" src="assets/64x64/day/176.png" alt="after one hour img">
+                        <div class="next-few-hours-sub-temp" id="after-one-hour-avg-temp">25°C</div>
+                        <div class="next-few-hours-sub-status" id="after-one-hour-status">Sunny</div>
+                    </div>
+                </div>
+            </div>
+            <div class="next-few-hours-primary-container">
+                <div class="next-four-hours-sub-container">
+                    <div class="next-few-hours-sub-container-two">
+                        <div class="next-few-hours-sub-title" id="after-one-hour">9.00 am</div>
+                        <img class="next-few-hours-sub-img" id="after-one-hour-image" src="assets/64x64/day/176.png" alt="after one hour img">
+                        <div class="next-few-hours-sub-temp" id="after-one-hour-avg-temp">25°C</div>
+                        <div class="next-few-hours-sub-status" id="after-one-hour-status">Sunny</div>
+                    </div>
+                </div>
+            </div>
+            <div class="next-few-hours-primary-container">
+                <div class="next-five-hours-sub-container">
+                    <div class="next-few-hours-sub-container-two">
+                        <div class="next-few-hours-sub-title" id="after-one-hour">9.00 am</div>
+                        <img class="next-few-hours-sub-img" id="after-one-hour-image" src="assets/64x64/day/176.png" alt="after one hour img">
+                        <div class="next-few-hours-sub-temp" id="after-one-hour-avg-temp">25°C</div>
+                        <div class="next-few-hours-sub-status" id="after-one-hour-status">Sunny</div>
+                    </div>
+                </div>
+            </div>
+            <div class="next-few-hours-primary-container">
+                <div class="next-six-hours-sub-container">
+                    <div class="next-few-hours-sub-container-two">
+                        <div class="next-few-hours-sub-title" id="after-one-hour">9.00 am</div>
+                        <img class="next-few-hours-sub-img" id="after-one-hour-image" src="assets/64x64/day/176.png" alt="after one hour img">
+                        <div class="next-few-hours-sub-temp" id="after-one-hour-avg-temp">25°C</div>
+                        <div class="next-few-hours-sub-status" id="after-one-hour-status">Sunny</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main image of the site -->
+        <div class="main-image-container">
+            <img class="main-image" src="assets/image/main-image-min.png" alt="">
+        </div>
+        <!-- Next week forcast -->
+        <div class="next-week-forcast-main-container">
+            <div class="next-week-forcast-primary">
+                <div class="next-week-forcast-title">Next week forcast</div>
+            </div>
+        </div>
+        <!-- Api massage for customer -->
+        <div class="main-massage-container">
+            <div class="main-massage-title">our #1 source of weather Api forecasts and updates.</div>
+            <div class="main-massage-content-one">Stay updated of any weather changes with weather Api.</div>
+            <div class="main-massage-content-tow">We are an expert team specializing on everything that concerns weather data. Since 2010, our website has been providing accurate and detailed weather forecasts available on any device.</div>
+        </div>
+
    </div>
     
     <script src="scripts/main.js"></script>
