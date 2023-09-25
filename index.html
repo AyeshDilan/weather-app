@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,25 +34,26 @@
         <!-- search bar -->
         <div class="search-bar">
             <div class="input-container">
-                <input class="search-box" type="text" placeholder="Enter City Name">
+                <input class="search-box" id="search-box" type="text" placeholder="Enter City Name">
             </div>
             <div>
-                <button class="btn-search" id="btn-search">Find Location</button>
+                <button class="btn-search" id="btn-search" onclick="searchBtnOnClick()">Find Location</button>
             </div>
         </div>
         <!-- main weather panel -->
         <div class="main-ewather-panel">
             <div class="crrunt-weather-panel">
-                <h4 class="Current-weather-title">Today</h4>
+                <h4 class="Current-weather-title">Current</h4>
                 <div class="current-cundition-img-container">
-                    <img class="current-cundition-img" src="assets/64x64/day/116.png" alt="Current weather img">
+                    <!-- <a href="//cdn.weatherapi.com/weather/64x64/night/116.png" title="Free Weather API"> -->
+                        <img class="current-cundition-img" id="current-cundition-img" src="" alt="Weather icon">
+                    <!-- </a> -->
                 </div>
                 <div class="seach-location" id="seach-location">Colombo</div>
                 <div class="current-location-avg-temp">
-                    <div id="current-location-avg-temp">25</div>
-                    <div class="unit-temp">°C</div>
+                    <div id="current-location-avg-temp">00</div>
                 </div>
-                <div class="current-weather-status" id="current-weather-status">Partially Cloudy</div>
+                <div class="current-weather-status" id="current-weather-status">updating...</div>
             </div>
             <div class="date-time-panel">
                 <div>
@@ -73,8 +74,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/humidity.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-humidity">
-                                    <div id="current-location-humidity">25</div>
-                                    <div class="unit-catogary">%</div>
+                                    <div id="current-location-humidity">00</div>
                                 </div>
                             </div>
                         </td>
@@ -86,8 +86,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/feels-like.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-feels-like">
-                                    <div id="current-location-avg-temp">25</div>
-                                    <div class="unit-catogary">°C</div>
+                                    <div class="current-location-feel-temp" id="current-location-feel-temp">00</div>
                                 </div>
                             </div>
                         </td>
@@ -99,8 +98,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/wind-spreed.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-win-speed">
-                                    <div id="current-location-win-speed">25</div>
-                                    <div class="unit-catogary">km/h</div>
+                                    <div id="current-location-win-speed">00</div>
                                 </div>
                             </div>
                         </td>
@@ -114,8 +112,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/pressur.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-air-pressure">
-                                    <div id="current-location-air-pressure">25</div>
-                                    <div class="unit-catogary">Pa</div>
+                                    <div id="current-location-air-pressure">00</div>
                                 </div>
                             </div>
                         </td>
@@ -127,8 +124,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/uv.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-uv-index">
-                                    <div id="current-location-uv-index">25</div>
-                                    <div class="unit-catogary"></div>
+                                    <div id="current-location-uv-index">00</div>
                                 </div>
                             </div>
                         </td>
@@ -140,8 +136,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/rain.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-precipitation">
-                                    <div id="current-location-precipitation">25</div>
-                                    <div class="unit-catogary">mm</div>
+                                    <div id="current-location-precipitation">00</div>
                                 </div>
                             </div>
                         </td>
@@ -155,7 +150,7 @@
         </div>
         <!-- emberded map -->
         <div class="search-map">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26643.92389078727!2d79.85452344353781!3d6.933204600261033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1695373450702!5m2!1sen!2slk" ></iframe>
+            <iframe class="map" id="map" src="https://maps.google.com/maps?q=tangalle&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
         </div>
         <!-- current sunrise and sunset time -->
         <div class="sun-rise-set-container">
@@ -164,37 +159,16 @@
                     <div class="sun-rise-set-inner-container-secondory">
                         <img class="current-sun-rise-set-img" src="assets/image/sunrise.png" />
                         <div class="current-sun-rise-set-title">sunrise</div>
-                        <div id="current-sun-rise-time" class="current-sun-rise-set-time">05.58 am</div>
+                        <div id="current-sun-rise-time" class="current-sun-rise-set-time">00.00 am</div>
                     </div>
                 </div>
             </div>
             <div class="sun-rise-set-primary-container">
                 <div class="sun-rise-set-inner-container">
                     <div class="sun-rise-set-inner-container-secondory">
-                        <img class="current-sun-rise-set-img" src="assets/image/sunset.png" />
+                        <img class="current-sun-rise-set-img" src="assets/image/sunset.png" alt="sunset img"/>
                         <div class="current-sun-rise-set-title">sunset</div>
-                        <div id="current-sun-set-time" class="current-sun-rise-set-time">05.58 am</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- current sunrise and sunset time -->
-        <div class="sun-rise-set-container">
-            <div class="sun-rise-set-primary-container">
-                <div class="sun-rise-set-inner-container">
-                    <div class="sun-rise-set-inner-container-secondory">
-                        <img class="current-sun-rise-set-img" src="assets/image/sunrise.png" />
-                        <div class="current-sun-rise-set-title">sunrise</div>
-                        <div id="current-sun-rise-time" class="current-sun-rise-set-time">05.58 am</div>
-                    </div>
-                </div>
-            </div>
-            <div class="sun-rise-set-primary-container">
-                <div class="sun-rise-set-inner-container">
-                    <div class="sun-rise-set-inner-container-secondory">
-                        <img class="current-sun-rise-set-img" src="assets/image/sunset.png" />
-                        <div class="current-sun-rise-set-title">sunset</div>
-                        <div id="current-sun-set-time" class="current-sun-rise-set-time">05.58 am</div>
+                        <div id="current-sun-set-time" class="current-sun-rise-set-time">00.00 am</div>
                     </div>
                 </div>
             </div>
@@ -206,7 +180,7 @@
                     <div class="moon-rise-set-inner-container-secondory">
                         <img class="current-moon-rise-set-img" src="assets/image/moonrise.png" />
                         <div class="current-moon-rise-set-title">moonrise</div>
-                        <div id="current-moon-rise-time" class="current-moon-rise-set-time">05.58 am</div>
+                        <div id="current-moon-rise-time" class="current-moon-rise-set-time">00.00 am</div>
                     </div>
                 </div>
             </div>
@@ -215,7 +189,7 @@
                     <div class="moon-rise-set-inner-container-secondory">
                         <img class="current-moon-rise-set-img" src="assets/image/moonset.png" />
                         <div class="current-moon-rise-set-title">moonset</div>
-                        <div id="current-moon-set-time" class="current-moon-rise-set-time">05.58 am</div>
+                        <div id="current-moon-set-time" class="current-moon-rise-set-time">00.00 am</div>
                     </div>
                 </div>
             </div>
@@ -507,6 +481,161 @@
                 </div>
 
             </div>
+            <div class="weather-history-details-container">
+                <div class="weather-history-main-details-container">
+                    <div class="weather-history-search-date">dd/mm/yyyy</div>
+                    <div class="weather-history-search-date-avg-tmp">25°C</div>
+                    <div class="weather-history-search-date-condition">condition</div>
+                    <div>
+                        <img class="weather-history-search-date-condition-img" id="weather-history-search-date-condition-img" src="assets/64x64/day/176.png" alt="weather condition img">
+                    </div>
+                </div>
+                <div class="weather-history-search-date-details-container">
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">Maximum temperature</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">Minimum temperature</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">Maximum wind speed</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">Total precipitation</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">Average visibility</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">Average humidity</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">UV Index</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">Sunrise</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-history-search-date-details-sub-container" >
+                        <div class="weather-history-search-date-details-secondry-container">
+                            <div class="weather-history-search-date-details-text-container">
+                                <div class="weather-history-search-date-details-text">Sunset</div>
+                                <div class="weather-history-search-date-details-unit">25°C</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer section -->
+        <div class="footer-container">
+            <div class="footer-logo-container">
+                <div class="footer-logo-twiter-container" >
+                    <a href="#">
+                        <img class="footer-logo-twiter-img"  src="assets/image/twitter.png" alt="twitter img">
+                    </a>
+                </div>
+                <div class="footer-logo-twiter-container" >
+                    <a href="#">
+                        <img class="footer-logo-twiter-img"  src="assets/image/instergram.png" alt="twitter img">
+                    </a>
+                </div>
+                <div class="footer-logo-twiter-container" >
+                    <a href="#">
+                        <img class="footer-logo-twiter-img"  src="assets/image/youtube.png" alt="twitter img">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-text-container">
+                <div class="footer-text-title">Copyright Notice</div>
+                <a href="#">
+                    <div class="footer-text-content-content">Guidance</div>
+                </a>
+            </div>
+            <div class="footer-text-container">
+                <div class="footer-text-title">Terms and Conditions</div>
+                <a href="#">
+                    <div class="footer-text-content-content">Conditions</div>
+                </a>
+                <a href="#">
+                    <div class="footer-text-content-content">Regulations</div>
+                </a>
+            </div>
+            <div class="footer-text-container">
+                <div class="footer-text-title">Privacy Policy</div>
+                <a href="#">
+                    <div class="footer-text-content-content">Outlines</div>
+                </a>
+                <a href="#">
+                    <div class="footer-text-content-content">About cookies</div>
+                </a>
+            </div>
+            <div class="footer-text-container">
+                <div class="footer-text-title">Contact Us</div>
+                <a href="#">
+                    <div class="footer-text-content-content">weathersense@info</div>
+                </a>
+                <div class="footer-text-content-content">Weather Sense .Group, no 65, Armed Plase, Panadura.(12500),<br/>Sri Lanka.</div>
+                
+            </div>
+            <div class="footer-text-container">
+                <div class="footer-text-title">About Us</div>
+                <a href="#">
+                    <div class="footer-text-content-content">About WeatherSphere</div>
+                </a>
+                <a href="#">
+                    <div class="footer-text-content-content">Our Mission</div>
+                </a>
+                <a href="#">
+                    <div class="footer-text-content-content">Who We Are</div>
+                </a>
+            </div>
+            <div class="rights">©2023 WeatherSense All Rights Reserved.</div>
+
+
+
+
+
+
         </div>
 
 
@@ -514,6 +643,7 @@
 
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
