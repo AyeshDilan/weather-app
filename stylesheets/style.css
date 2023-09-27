@@ -43,6 +43,10 @@
     box-sizing: border-box;
 } 
 
+.initials{
+    
+}
+
 .main-container{
     width: 100%; 
     height: 3500px; 
@@ -136,7 +140,7 @@
     word-wrap: break-word;
     width: 120px; 
     height: 43px; 
-    padding-left: 23px; 
+    padding-left: 18px; 
     padding-right: 7px; 
     padding-top: 4px; 
     padding-bottom: 10px; 
@@ -176,12 +180,13 @@
 
 .search-box{
     width: 917px; 
-    font-size: 30px; 
+    height: inherit;
+    font-size: 25px; 
     font-family: Inter; 
-    font-weight: 700; 
+    font-weight: 500; 
     word-wrap: break-word;
     border-color: transparent;
-    border-inline-color: var(--white-solid-color);
+    border-inline-color: white;
     border-radius: 10px;
     padding-left: 10px;
 }
@@ -209,21 +214,16 @@
     width: 773px; 
     height: 65px;
     color: white;
-    padding-left: 22px; 
-    padding-right: 22px; 
-    padding-top: 8px; 
-    padding-bottom: 8px; 
+    padding: 15px;
     left: 464px; 
     top: 143px; 
     position: absolute;
     font-family: Inter; 
     font-weight: 700; 
-    font-size:30px;
-    
+    font-size:28px;
     background: linear-gradient(180deg, #5936B4 0%, #362A84 100%); 
     box-shadow: 0px 4px 12px rgba(218.88, 146.83, 146.83, 0.40) inset; 
     border-radius: 20px; 
-    overflow: hidden; 
     border: 1px rgba(248.63, 222.73, 222.73, 0.17) solid; 
     justify-content: flex-start; 
     align-items: flex-start; 
@@ -234,12 +234,14 @@
 .date-container{
     width: 840px; 
     height: 43px; 
-    text-align: center; 
+    top: 10px;
+    text-align: left; 
     color: white; 
     font-size: 30px; 
     font-family: Inter; 
     font-weight: 700; 
-    word-wrap: break-word;
+    word-wrap: nowrap !important;
+    border: 1px rgb(238, 228, 228) solid; 
 }
 
 .time-container{
@@ -247,7 +249,9 @@
     font-size: 30px; 
     font-family: Inter; 
     font-weight: 700; 
+    align-items: baseline;
     word-wrap: break-word;
+    border: 1px rgb(248, 242, 242) solid; 
 }
 
 /*current weather panel*/
@@ -271,7 +275,7 @@
 }
 
 .Current-weather-title{
-    width: 250px; 
+    width: 350px; 
     height: 31px;
     top: -30px; 
     position: relative;
@@ -293,7 +297,7 @@
     width:max-content; 
     height:max-content; 
     left: 130px; 
-    top: 0px; 
+    top: 60px; 
     scale: 4;
     position: relative; 
     border-radius: 16px;
@@ -303,6 +307,7 @@
     width: 354px; 
     height: 44px; 
     position: relative;
+    top: -230px;
     color: white; 
     font-size: 30px; 
     font-family: Inter; 
@@ -316,6 +321,7 @@
     width: 354px; 
     height: 82px; 
     position: relative;
+    top: -20px;
     color: white; 
     font-size: 80px; 
     font-family: Inter; 
@@ -329,6 +335,7 @@
     width: 350px; 
     height: 30px; 
     position: relative;
+    top: -15px;
     color: white; 
     font-size: 20px; 
     font-family: Inter; 
@@ -673,7 +680,7 @@
 }
 
 /* The next few hours */
-.next-few-hours-main-container{
+.hourly-forecast-main-container{
     width: 1136px;
     height: 324px; 
     padding-left: 9px; 
@@ -685,138 +692,32 @@
     position: absolute; 
     background: conic-gradient(from 180deg at 0.00% 100.00%, rgba(97, 47, 171, 0) 36deg, #612FAB 116deg, rgba(97, 47, 171, 0.13) 225deg, #612FAB 308deg); 
     box-shadow: 0px 4px 4px rgba(238, 173.54, 173.54, 0.25) inset; border-radius: 20px; 
-    overflow: hidden; 
     border: 1px rgba(174, 201, 255, 0.50) solid; 
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: center; 
     display: inline-flex;
 }
+.scroll-outer-container{
+    width: 1120px;
+    height: 324px; 
+    position: relative;
+    overflow: auto;
+    left: 1px; 
 
-.next-few-hours-title{
-    width: 361px; 
+}
+
+.hourly-forecast-main-tittle{
+    width: max-content; 
     height: 47px; 
     text-align: center; 
     color: white; 
     font-size: 35px; 
     font-family: Inter; 
     font-weight: 700; 
-    word-wrap: break-word;
-    padding-top: 1%;
 }
 
-.next-few-hours-primary-container{
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    gap: 27px; 
-    display: inline-flex;
-}
-
-.next-one-hours-sub-container{
-    width: 175px; 
-    height: 245px; 
-    position: relative;
-
-    width: 176px; 
-    height: 245px; 
-    left: 11px; 
-    top: 65px; 
-    position: absolute; 
-    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
-    border-radius: 15px; 
-    border: 1px black solid;
-}
-
-.next-two-hours-sub-container{
-    width: 175px; 
-    height: 245px; 
-    position: relative;
-
-    width: 176px; 
-    height: 245px; 
-    left: 197px; 
-    top: 65px; 
-    position: absolute; 
-    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
-    border-radius: 15px; 
-    border: 1px black solid;
-}
-
-.next-three-hours-sub-container{
-    width: 175px; 
-    height: 245px; 
-    position: relative;
-
-    width: 176px; 
-    height: 245px; 
-    left: 383px; 
-    top: 65px; 
-    position: absolute; 
-    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
-    border-radius: 15px; 
-    border: 1px black solid;
-}
-
-.next-four-hours-sub-container{
-    width: 175px; 
-    height: 245px; 
-    position: relative;
-
-    width: 176px; 
-    height: 245px; 
-    left: 571px; 
-    top: 65px; 
-    position: absolute; 
-    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
-    border-radius: 15px; 
-    border: 1px black solid;
-}
-
-.next-five-hours-sub-container{
-    width: 175px; 
-    height: 245px; 
-    position: relative;
-
-    width: 176px; 
-    height: 245px; 
-    left: 757px; 
-    top: 65px; 
-    position: absolute; 
-    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
-    border-radius: 15px; 
-    border: 1px black solid;
-}
-
-.next-six-hours-sub-container{
-    width: 175px; 
-    height: 245px; 
-    position: relative;
-
-    width: 176px; 
-    height: 245px; 
-    left: 943px; 
-    top: 65px; 
-    position: absolute; 
-    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
-    border-radius: 15px; 
-    border: 1px black solid;
-}
-
-.next-few-hours-sub-container-two{
-    width: 176px; 
-    height: 229px; 
-    left: 1px; 
-    top: 7px; 
-    position: absolute;
-
-    width: 176px; 
-    height: 229px; 
-    left: 0px; 
-    top: 0px; 
-    position: absolute;
-}
-
-.next-few-hours-sub-title{
+.hourly-forecast-time{
     width: 158px; 
     height: 32px; 
     left: 9px; 
@@ -830,42 +731,383 @@
     word-wrap: break-word;
 }
 
-.next-few-hours-sub-img{
+.hourly-forecast-img{
     width:fit-content; 
-    align-content:inherit;
-    padding-left: 10%;
+    align-content:center;
     height: 107px; 
-    left: 16px; 
     top: 35px; 
-    position: absolute; 
-    border-radius: 10px;
+    left: 35px;
+    position:absolute; 
 }
 
-.next-few-hours-sub-temp{
-    width:fit-content; 
+.hourly-forecast-temp{
+    width:155px; 
     height: 47px; 
     top: 145px; 
-    position: absolute; 
-    text-align: center; 
+    position: relative;
+    text-align: center;
+    align-items: center; 
     color: white; 
     font-size: 35px; 
-    padding-left: 25%;
     font-family: Inter; 
     font-weight: 700; 
 }
 
-.next-few-hours-sub-status{
-    width: 176px; 
-    height: 35px; 
-    left: 0px; 
-    top: 194px; 
-    position: absolute; 
-    text-align: center; 
+.hourly-forecast-status {
+    width: 175px; 
+    height: max-content; 
+    top: 145px;
+    position: relative;
     color: white; 
     font-size: 20px; 
     font-family: Inter; 
-    font-weight: 400; 
+    font-weight: 500; 
+    text-align: center;
+    align-items: center;
     word-wrap: break-word;
+}
+
+.con{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+.zero-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 176px; 
+    height: 245px; 
+    top: 6px; 
+    left: 11px;
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.one-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 196px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.two-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 381px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.three-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 566px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.four-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 751px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.five-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 936px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.six-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 1121px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.seven-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 1306px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.eight-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 1491px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.nine-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 1676px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.ten-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 1861px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.eleven-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 2046px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.twlve-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 2231px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.thirteen-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 2416px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.fourteen-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 2601px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.fifteen-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 2786px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.sixteen-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 2971px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.seventeen-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 3156px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.eighteen-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 3341px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.nineteen-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 3526px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.twenty-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 3711px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.twenty-one-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 3896px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.twenty-two-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 4081px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
+}
+
+.twenty-three-hours-sub-container{
+    width: 175px; 
+    height: 245px; 
+    position: relative;
+    width: 176px; 
+    height: 245px; 
+    left: 4266px; 
+    top: 6px; 
+    position: absolute; 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+    border-radius: 15px; 
+    border: 1px black solid;
 }
 
 /*main image of the site*/
@@ -980,6 +1222,8 @@
 }
 /*----------------------------*/
 
+
+
 .next-week-primary-container{
     justify-content: flex-start; 
     align-items: flex-start; 
@@ -990,10 +1234,9 @@
 .next-after-one-day-sub-container{
     width: 175px; 
     height: 245px; 
-    position: relative;
-
     width: 176px; 
     height: 245px; 
+    align-items: center;
     left: 13px; 
     top: 65px; 
     position: absolute; 
@@ -1088,7 +1331,6 @@
     height: 229px; 
     left: 0px; 
     top: 0px; 
-    position: absolute;
 }
 
 .next-week-sub-title{
@@ -1117,23 +1359,23 @@
 }
 
 .next-week-sub-temp{
-    width:fit-content; 
+    width: 175px;; 
     height: 47px; 
-    top: 145px; 
+    top: 135px; 
     position: absolute; 
     text-align: center; 
     color: white; 
+    word-wrap: break-word;
     font-size: 35px; 
-    padding-left: 25%;
     font-family: Inter; 
     font-weight: 700; 
 }
 
 .next-week-sub-status{
     width: 176px; 
-    height: 35px; 
+    height: max-content; 
     left: 0px; 
-    top: 194px; 
+    top: 185px; 
     position: absolute; 
     text-align: center; 
     color: white; 
@@ -1142,62 +1384,35 @@
     font-weight: 400; 
     word-wrap: break-word;
 }
+/*more details button*/
 
-/*down arrow*/
-#down-arrow-day-two-container{
-    visibility:visible;
-    position: inherit;
-    scale: 0.2;
-    top: 5px;
-    left: -160px;
-    opacity: 0.8;
+.more-details-new{
+    position: absolute;
+    top: 370px;
 }
 
-#down-arrow-day-three-container{
-    visibility:hidden;
-    position: inherit;
-    scale: 0.2;
-    top: 5px;
-    left: -160px;
-    opacity: 0.5;
+
+.btn-more-details{
+    position: absolute;
+    width: 175px;
+    top: 250px;
+    height: 34px;
+    border-radius: 8px;
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; cursor: pointer;
+    color: white; 
+
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgba(54,42,132,1) 100%); 
+
 }
 
-#down-arrow-day-four-container{
-    visibility:hidden;
-    position: inherit;
-    scale: 0.2;
-    top: 5px;
-    left: -160px;
-    opacity: 0.5;
+.selected { 
+    background: radial-gradient(circle, rgba(129,94,220,1) 0%, rgb(96, 42, 132) 100%);
+    scale: 1.1;
 }
 
-#down-arrow-day-five-container{
-    visibility:hidden;
-    position: inherit;
-    scale: 0.2;
-    top: 5px;
-    left: -160px;
-    opacity: 0.5;
-}
-
-#down-arrow-day-six-container{
-    visibility:hidden;
-    position: inherit;
-    scale: 0.2;
-    top: 5px;
-    left: -160px;
-    opacity: 0.5;
-}
-
-#down-arrow-day-seven-container{
-    visibility:hidden;
-    position: inherit;
-    scale: 0.2;
-    top: 5px;
-    left: -160px;
-    opacity: 0.5;
-}
-
+/*next six days forcast container*/
 .next-week-forcast-details-container{
     width: 1109px; 
     height: 245px;
@@ -1247,7 +1462,7 @@
     width: 356px; 
     height: 19px; 
     left: 0px; 
-    top: 0px; 
+    top: 3px; 
     position: absolute; 
     color: white; 
     font-size: 20px; 
@@ -1259,8 +1474,8 @@
 .next-week-forcast-details-raw-value{
     width: 105px; 
     height: 19px; 
-    left: 427px; 
-    top: 0px; 
+    left: 400px; 
+    top: 3px; 
     position: absolute; 
     color: white; 
     font-size: 20px; 
