@@ -327,7 +327,6 @@ function searchBtnOnClick() {
             dayFiveForecastStatus.text(resp.forecast.forecastday[5].day.condition.text);
             daySixForecastStatus.text(resp.forecast.forecastday[6].day.condition.text);
 
-         
             // day one details
             moreDetailsMaxTemp.text((resp.forecast.forecastday[1].day.maxtemp_c)+"°C");
             moreDetailsMinTemp.text((resp.forecast.forecastday[1].day.mintemp_c)+"°C");
@@ -393,8 +392,7 @@ function moreDetailsDayTwo(){
             moreDetailsAvgHumidity.text((resp.forecast.forecastday[2].day.avghumidity)+"%");
             moreDetailsUvIndex.text(resp.forecast.forecastday[2].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[2].astro.sunrise);
-            moreDetailsSunset.text(resp.forecast.forecastday[2].astro.sunset);
-                  
+            moreDetailsSunset.text(resp.forecast.forecastday[2].astro.sunset);       
         }
     });
 }
