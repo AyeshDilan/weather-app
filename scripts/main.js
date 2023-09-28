@@ -159,7 +159,7 @@ const dayFourForecastStatus = $("#after-four-day-status");
 const dayFiveForecastStatus = $("#after-five-day-status");
 const daySixForecastStatus = $("#after-six-day-status");
 
-//more details day one
+//more details of next day 
 const moreDetailsMaxTemp = $("#btn-more-details-day-one-max-temp");
 const moreDetailsMinTemp = $("#btn-more-details-day-one-min-temp");
 const moreDetailsChanceToRain = $("#btn-more-details-day-one-israin");
@@ -201,7 +201,7 @@ function searchBtnOnClick() {
             searchedLocationUv.text(resp.current.uv);
             searchedLocationPrecipitation.text((resp.current.precip_mm)+"mm");
         }
-    })
+    });
 
     $.ajax({
         method: "GET",
@@ -490,8 +490,64 @@ function moreDetailsDaySix(){
     });
 }
 
+//History of weather
+const historyDateOfSearch = $("#weather-history-search-date");
+const historyWeatherLocation =$("#weather-history-search-location")
+const historyAvgTemp =$("#weather-history-search-date-avg-tmp");
+const historyWeatherCondition =$("#weather-history-search-date-condition");
+const historyWeatherImg =$("#weather-history-search-date-condition-img");
+const historyWeatherMaxTemp =$("#weather-history-search-date-details-max-temp");
+const historyWeatherMinTemp =$("#weather-history-search-date-details-min-temp");
+const historyWeatherMaxWinSpreed = $("#weather-history-search-date-details-max-wind-spreed");
+const historyWeatherTotPrecipitation =$("#weather-history-search-date-details-tot-precipitation");
+const historyWeatherAvgVisibility=$("#weather-history-search-date-details-avg-isibility");
+const historyWeatherAvgHumidity =$("#weather-history-search-date-details-avg-humidity");
+const historyWeatherUvIndex =$("#weather-history-search-date-details-uv-index");
+const historyWeatherSunrise =$("#weather-history-search-date-details-sunrise");
+const historyWeatherSunset =$("#weather-history-search-date-details-sunset");
 
+const inputOfDate = document.getElementById("input-of-hostory-request-date");
 
+//input section to search btn key forcus
+inputOfDate.addEventListener("keyup", e =>{
+    if(e.key == "Enter" && inputOfDate.value != ""){
+        document.getElementById("btn-search-of-history").focus();
+    }
+})
+
+function getHostoryOfWeather(){
+    const [year, month, day] = (inputOfDate.value).split("-").map(Number);
+    console.log("Year:", year);
+    console.log("Month:", month);
+    console.log("Day:", day);
+    
+    $.ajax({
+        method: "GET",
+        url: `http://api.weatherapi.com/v1/history.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&dt=${year+"-"+month+"-"+day}`, // Use template literals to interpolate inputValue
+        success: (resp) => {
+            console.log(resp);
+
+            historyDateOfSearch.text(resp.forecast.forecastday[0].date);
+            historyWeatherLocation.text(resp.location.name);
+            historyAvgTemp.text((resp.forecast.forecastday[0].day.avgtemp_c)+" °C");
+            historyWeatherCondition.text(resp.forecast.forecastday[0].day.condition.text);
+            historyWeatherImg.attr("src",resp.forecast.forecastday[0].day.condition.icon);
+            historyWeatherMaxTemp.text((resp.forecast.forecastday[0].day.maxtemp_c)+" °C");
+            historyWeatherMinTemp.text((resp.forecast.forecastday[0].day.mintemp_c)+" °C");
+            historyWeatherMaxWinSpreed.text((resp.forecast.forecastday[0].day.maxwind_kph)+" kph");
+            historyWeatherTotPrecipitation.text((resp.forecast.forecastday[0].day.totalprecip_mm)+" mm");
+            historyWeatherAvgVisibility.text((resp.forecast.forecastday[0].day.avgvis_km)+" km");
+            historyWeatherAvgHumidity.text((resp.forecast.forecastday[0].day.avghumidity)+" %");
+            historyWeatherUvIndex.text(resp.forecast.forecastday[0].day.uv);
+            historyWeatherSunrise.text(resp.forecast.forecastday[0].astro.sunrise);
+            historyWeatherSunset.text(resp.forecast.forecastday[0].astro.sunset);
+           
+            
+        }
+    })
+    inputOfDate.value = "";
+
+}
 
 
   

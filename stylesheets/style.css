@@ -1593,6 +1593,7 @@
     width: 585px; 
     height: 49px; 
     text-align: center; 
+    padding: 2%;
     color: white; 
     font-size: 18px; 
     font-family: Inter; 
@@ -1642,6 +1643,7 @@
     width: 177px; 
     height: 33px; 
     left: 250px;
+    text-align: center;
     border-radius: 8px; 
     top: 6px; 
     position: absolute; 
@@ -1684,12 +1686,12 @@
 }
 
 .weather-history-search-date{
-    width: 279px; 
-    height: 54px; 
-    left: 2px; 
+    width: max-content; 
+    height: max-content; 
+    left: 84px; 
     top: 30px; 
     position: absolute; 
-    text-align: center; 
+    text-align: left; 
     color: white; 
     font-size: 25px; 
     font-family: Inter; 
@@ -1697,13 +1699,42 @@
     word-wrap: break-word;
 }
 
+.weather-history-search-date-at{
+    width: max-content; 
+    height: max-content; 
+    left: 262px; 
+    top: 30px; 
+    position: absolute; 
+    text-align: left; 
+    color: white; 
+    font-size: 25px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.weather-history-search-location-name{
+    width: max-content; 
+    height: max-content; 
+    left: 310px; 
+    top: 30px; 
+    position: absolute; 
+    text-align: left; 
+    color: white; 
+    font-size: 25px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+
 .weather-history-search-date-avg-tmp{
     width: 290px; 
     height: 48px; 
-    left: 0px; 
+    left: 84px; 
     top: 83px; 
     position: absolute; 
-    text-align: center; 
+    text-align: left; 
     color: white; 
     font-size: 45px; 
     font-family: Inter; 
@@ -1712,12 +1743,12 @@
 }
 
 .weather-history-search-date-condition{
-    width: 220px; 
-    height: 42px; 
-    left: 34px; 
+    width: 420px; 
+    height: max-content; 
+    left: 84px; 
     top: 155px; 
     position: absolute; 
-    text-align: center; 
+    text-align: left; 
     color: white; 
     font-size: 20px; 
     font-family: Inter; 
@@ -1794,7 +1825,7 @@
 .weather-history-search-date-details-unit{
     width: 99px; 
     height: 19px; 
-    left: 418px; 
+    left: 400px; 
     top: 5px; 
     position: absolute; 
     color: white; 

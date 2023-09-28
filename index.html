@@ -644,22 +644,24 @@
         <!-- weather history -->
         <div class="weather-history-container">
             <div class="weather-history-container-title">Historical Weather Data</div>
-            <div class="weather-history-container-discription">Use this section to get historical weather for a date on or after January 1, 2010.</div>
+            <div class="weather-history-container-discription">Use this section to get historical weather data for a year back from today.</div>
             <div class="weather-history-input-container">
                 <div class="weather-history-input-inner-container">
                     <div class="weather-history-input-second-inner-container">
                         <div class="weather-history-input-request">Enter required date</div>
-                        <input class="weather-history-input-date-container" type="text" placeholder="dd/mm/yyyy">
-                        <button class="weather-history-search-btn">Search</button>
+                        <input class="weather-history-input-date-container" id="input-of-hostory-request-date" type="text" placeholder="yyyy-mm-dd">
+                        <button class="weather-history-search-btn" id="btn-search-of-history" onclick="getHostoryOfWeather()">Search</button>
                     </div>
                 </div>
 
             </div>
             <div class="weather-history-details-container">
                 <div class="weather-history-main-details-container">
-                    <div class="weather-history-search-date">dd/mm/yyyy</div>
-                    <div class="weather-history-search-date-avg-tmp">25°C</div>
-                    <div class="weather-history-search-date-condition">condition</div>
+                    <div class="weather-history-search-date" id="weather-history-search-date">dd/mm/yyyy</div>
+                    <div class="weather-history-search-date-at" id="weather-history-search-date">at</div>
+                    <div class="weather-history-search-location-name" id="weather-history-search-location">Location</div>
+                    <div class="weather-history-search-date-avg-tmp" id="weather-history-search-date-avg-tmp">25°C</div>
+                    <div class="weather-history-search-date-condition" id="weather-history-search-date-condition">condition</div>
                     <div>
                         <img class="weather-history-search-date-condition-img" id="weather-history-search-date-condition-img" src="assets/64x64/day/176.png" alt="weather condition img">
                     </div>
@@ -669,7 +671,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Maximum temperature</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-max-temp">25°C</div>
                             </div>
                         </div>
                     </div>
@@ -677,7 +679,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Minimum temperature</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-min-temp">25°C</div>
                             </div>
                         </div>
                     </div>
@@ -685,7 +687,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Maximum wind speed</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-max-wind-spreed">25°C</div>
                             </div>
                         </div>
                     </div>
@@ -693,7 +695,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Total precipitation</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-tot-precipitation">25°C</div>
                             </div>
                         </div>
                     </div>
@@ -701,7 +703,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Average visibility</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-avg-isibility">25°C</div>
                             </div>
                         </div>
                     </div>
@@ -709,7 +711,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Average humidity</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-avg-humidity">25°C</div>
                             </div>
                         </div>
                     </div>
@@ -717,7 +719,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">UV Index</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-uv-index">25°C</div>
                             </div>
                         </div>
                     </div>
@@ -725,7 +727,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Sunrise</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-sunrise">25°C</div>
                             </div>
                         </div>
                     </div>
@@ -733,7 +735,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Sunset</div>
-                                <div class="weather-history-search-date-details-unit">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-sunset">25°C</div>
                             </div>
                         </div>
                     </div>
