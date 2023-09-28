@@ -732,7 +732,7 @@
 }
 
 .hourly-forecast-img{
-    width:fit-content; 
+    width:auto; 
     align-content:center;
     height: 107px; 
     top: 35px; 
@@ -1348,7 +1348,7 @@
 }
 
 .next-week-sub-img{
-    width:fit-content; 
+    width:auto; 
     align-content:inherit;
     padding-left: 10%;
     height: 107px; 
@@ -1757,7 +1757,7 @@
 }
 
 .weather-history-search-date-condition-img{
-    width:fit-content; 
+    width:auto; 
     align-content:inherit;
     padding-left: 10%;
     height: 107px; 
