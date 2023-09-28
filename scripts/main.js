@@ -187,7 +187,7 @@ function searchBtnOnClick() {
   
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/current.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/current.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
            
@@ -206,7 +206,7 @@ function searchBtnOnClick() {
 
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/astronomy.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/astronomy.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
            
@@ -219,7 +219,7 @@ function searchBtnOnClick() {
 
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
             //Hour-by-hour weather conditions today
@@ -356,7 +356,7 @@ productButtons.forEach(productButton => {
 function moreDetailsDayOne(){
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
            
@@ -379,7 +379,7 @@ function moreDetailsDayOne(){
 function moreDetailsDayTwo(){
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
            
@@ -401,7 +401,7 @@ function moreDetailsDayTwo(){
 function moreDetailsDayThree(){
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
            
@@ -424,7 +424,7 @@ function moreDetailsDayThree(){
 function moreDetailsDayFour(){
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
            
@@ -447,7 +447,7 @@ function moreDetailsDayFour(){
 function moreDetailsDayFive(){
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
            
@@ -470,7 +470,7 @@ function moreDetailsDayFive(){
 function moreDetailsDaySix(){
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/forecast.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&days=7`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
            
@@ -522,7 +522,7 @@ function getHostoryOfWeather(){
     
     $.ajax({
         method: "GET",
-        url: `http://api.weatherapi.com/v1/history.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&dt=${year+"-"+month+"-"+day}`, // Use template literals to interpolate inputValue
+        url: `https://api.weatherapi.com/v1/history.json?key=f51823be6af44f489f3184638232409&q=${inputValue.value}&dt=${year+"-"+month+"-"+day}`, // Use template literals to interpolate inputValue
         success: (resp) => {
             console.log(resp);
 

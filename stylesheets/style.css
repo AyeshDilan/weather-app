@@ -48,8 +48,9 @@
 }
 
 .main-container{
-    width: 100%; 
+    width:1329px; 
     height: 3500px; 
+    left: 0px;
     position: absolute; 
     background: linear-gradient(180deg, #5936B4 0%, #362A84 100%); border: 2px black solid;
 }
@@ -759,7 +760,7 @@
     top: 145px;
     position: relative;
     color: white; 
-    font-size: 20px; 
+    font-size: 18px; 
     font-family: Inter; 
     font-weight: 500; 
     text-align: center;
