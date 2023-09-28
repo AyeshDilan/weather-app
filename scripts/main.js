@@ -15,7 +15,6 @@ function getFormattedDate() {
 }
 
 //get current time
-
 function updateTime() {
     const time = new Date();
     const hours = time.getHours();
@@ -29,8 +28,10 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 //Search bar
-const  inputValue = document.getElementById("search-box");
+const inputValue = document.getElementById("search-box");
 const searchedLocation = $("#seach-location");
+
+
 
 //map
 var map = $("#map");
