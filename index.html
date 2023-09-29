@@ -45,19 +45,20 @@
             <div class="crrunt-weather-panel">
                 <h4 class="Current-weather-title">Weather now</h4>
                 <div class="current-cundition-img-container">
-                    <img class="current-cundition-img" id="current-cundition-img" src="" alt="Weather icon">
+                    <img class="current-cundition-img" id="current-cundition-img" src="assets/64x64/day/116.png" alt="Weather icon">
                 </div>
                 <div class="seach-location" id="seach-location">Colombo</div>
                 <div class="current-location-avg-temp">
-                    <div id="current-location-avg-temp">00</div>
+                    <div id="current-location-avg-temp">00 °C</div>
                 </div>
-                <div class="current-weather-status" id="current-weather-status">updating...</div>
+                <div class="current-weather-status" id="current-weather-status">condition</div>
             </div>
+            <!-- date and time panel -->
             <div class="date-time-panel">
-                <div>
+                <div class="date-container">
                     <span id="date-container"></span>
                 </div>
-                <div>
+                <div class="time-container">
                     <span id="time-container"></span>
                 </div>
             </div>
@@ -72,7 +73,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/humidity.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-humidity">
-                                    <div id="current-location-humidity">00</div>
+                                    <div id="current-location-humidity">00 %</div>
                                 </div>
                             </div>
                         </td>
@@ -84,7 +85,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/feels-like.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-feels-like">
-                                    <div class="current-location-feel-temp" id="current-location-feel-temp">00</div>
+                                    <div class="current-location-feel-temp" id="current-location-feel-temp">00 °C</div>
                                 </div>
                             </div>
                         </td>
@@ -96,7 +97,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/wind-spreed.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-win-speed">
-                                    <div id="current-location-win-speed">00</div>
+                                    <div id="current-location-win-speed">00 kph</div>
                                 </div>
                             </div>
                         </td>
@@ -110,7 +111,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/pressur.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-air-pressure">
-                                    <div id="current-location-air-pressure">00</div>
+                                    <div id="current-location-air-pressure">00 mb</div>
                                 </div>
                             </div>
                         </td>
@@ -134,7 +135,7 @@
                                     <img class="current-weather-sub-penel-img" src="assets/image/rain.png" alt="hiumidity img">
                                 </div>
                                 <div class="crrunt-weather-sub-panel-precipitation">
-                                    <div id="current-location-precipitation">00</div>
+                                    <div id="current-location-precipitation">00 mm</div>
                                 </div>
                             </div>
                         </td>
@@ -205,8 +206,8 @@
                         <div class="zero-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-zero-hour">0.00</div>
-                                <img class="hourly-forecast-img" id="in-zero-hour-image" src="" alt="Weather icon">
-                                <div class="hourly-forecast-temp" id="in-zero-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-zero-hour-image" src="assets/64x64/night/122.png" alt="Weather icon">
+                                <div class="hourly-forecast-temp" id="in-zero-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status">
                                     <div class="com" id="in-zero-hour-status" >Sunny day of life branother</div>
                                 </div>
@@ -217,8 +218,8 @@
                         <div class="one-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-one-hour">1.00</div>
-                                <img class="hourly-forecast-img" id="in-one-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-one-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-one-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-one-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-one-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -227,8 +228,8 @@
                         <div class="two-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-two-hour">2.00</div>
-                                <img class="hourly-forecast-img" id="in-two-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-two-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-two-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-two-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-two-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -237,8 +238,8 @@
                         <div class="three-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-three-hour">3.00</div>
-                                <img class="hourly-forecast-img" id="in-three-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-three-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-three-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-three-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-three-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -247,8 +248,8 @@
                         <div class="four-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-four-hour">4.00 </div>
-                                <img class="hourly-forecast-img" id="in-four-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-four-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-four-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-four-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-four-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -257,8 +258,8 @@
                         <div class="five-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-five-hour">5.00 </div>
-                                <img class="hourly-forecast-img" id="in-five-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-five-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-five-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-five-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-five-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -267,8 +268,8 @@
                         <div class="six-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-six-hour">6.00</div>
-                                <img class="hourly-forecast-img" id="in-six-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-six-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-six-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-six-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-six-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -277,8 +278,8 @@
                         <div class="seven-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-seven-hour">7.00</div>
-                                <img class="hourly-forecast-img" id="in-seven-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-seven-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-seven-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-seven-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-seven-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -287,8 +288,8 @@
                         <div class="eight-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-eight-hour">8.00</div>
-                                <img class="hourly-forecast-img" id="in-eight-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-eight-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-eight-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-eight-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-eight-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -297,8 +298,8 @@
                         <div class="nine-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-nine-hour">9.00</div>
-                                <img class="hourly-forecast-img" id="in-nine-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-nine-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-nine-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-nine-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-nine-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -307,8 +308,8 @@
                         <div class="ten-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-ten-hour">10.00</div>
-                                <img class="hourly-forecast-img" id="in-ten-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-ten-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-ten-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-ten-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-ten-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -317,8 +318,8 @@
                         <div class="eleven-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-eleven-hour">11.00</div>
-                                <img class="hourly-forecast-img" id="in-eleven-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-eleven-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-eleven-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-eleven-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-eleven-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -327,8 +328,8 @@
                         <div class="twlve-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-twlve-hour">12.00</div>
-                                <img class="hourly-forecast-img" id="in-twlve-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-twlve-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-twlve-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-twlve-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-twlve-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -337,8 +338,8 @@
                         <div class="thirteen-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-thirteen-hour">13.00</div>
-                                <img class="hourly-forecast-img" id="in-thirteen-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-thirteen-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-thirteen-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-thirteen-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-thirteen-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -347,8 +348,8 @@
                         <div class="fourteen-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-fourteen-hour">14.00</div>
-                                <img class="hourly-forecast-img" id="in-fourteen-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-fourteen-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-fourteen-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-fourteen-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-fourteen-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -357,8 +358,8 @@
                         <div class="fifteen-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-fifteen-hour">15.00</div>
-                                <img class="hourly-forecast-img" id="in-fifteen-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-fifteen-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-fifteen-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-fifteen-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-fifteen-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -367,8 +368,8 @@
                         <div class="sixteen-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-sixteen-hour">16.00</div>
-                                <img class="hourly-forecast-img" id="in-sixteen-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-sixteen-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-sixteen-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-sixteen-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-sixteen-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -377,8 +378,8 @@
                         <div class="seventeen-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-seventeen-hour">17.00</div>
-                                <img class="hourly-forecast-img" id="in-seventeen-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-seventeen-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-seventeen-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-seventeen-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-seventeen-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -387,8 +388,8 @@
                         <div class="eighteen-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-eighteen-hour">18.00</div>
-                                <img class="hourly-forecast-img" id="in-eighteen-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-eighteen-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-eighteen-hour-image" src="assets/64x64/day/116.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-eighteen-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-eighteen-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -397,8 +398,8 @@
                         <div class="nineteen-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-nineteen-hour">19.00</div>
-                                <img class="hourly-forecast-img" id="in-nineteen-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-nineteen-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-nineteen-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-nineteen-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-nineteen-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -407,8 +408,8 @@
                         <div class="twenty-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-twenty-hour">20.00</div>
-                                <img class="hourly-forecast-img" id="in-twenty-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-twenty-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-twenty-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-twenty-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-twenty-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -417,8 +418,8 @@
                         <div class="twenty-one-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-twenty-one-hour">21.00</div>
-                                <img class="hourly-forecast-img" id="in-twenty-one-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-twenty-one-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-twenty-one-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-twenty-one-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-twenty-one-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -427,8 +428,8 @@
                         <div class="twenty-two-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-twenty-two-hour">22.00</div>
-                                <img class="hourly-forecast-img" id="in-twenty-two-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-twenty-two-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-twenty-two-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-twenty-two-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-twenty-two-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -437,8 +438,8 @@
                         <div class="twenty-three-hours-sub-container">
                             <div class="next-few-hours-sub-container-two">
                                 <div class="hourly-forecast-time" id="in-twenty-three-hour">23.00</div>
-                                <img class="hourly-forecast-img" id="in-twenty-three-hour-image" src="" alt="after one hour img">
-                                <div class="hourly-forecast-temp" id="in-twenty-three-hour-avg-temp">00</div>
+                                <img class="hourly-forecast-img" id="in-twenty-three-hour-image" src="assets/64x64/night/122.png" alt="after one hour img">
+                                <div class="hourly-forecast-temp" id="in-twenty-three-hour-avg-temp">00 °C</div>
                                 <div class="hourly-forecast-status" id="in-twenty-three-hour-status">Sunny</div>
                             </div>
                         </div>
@@ -465,8 +466,8 @@
                 <div class="next-after-one-day-sub-container">
                     <div class="next-week-sub-container-two">
                         <div class="next-week-sub-title" id="after-one-day">day 1</div>
-                        <img class="next-week-sub-img" id="after-one-day-img" src="" alt="after one hour img">
-                        <div class="next-week-sub-temp" id="after-one-day-temp">25°C</div>
+                        <img class="next-week-sub-img" id="after-one-day-img" src="assets/64x64/day/116.png" alt="after one hour img">
+                        <div class="next-week-sub-temp" id="after-one-day-temp">00 °C</div>
                         <div class="next-week-sub-status" id="after-one-day-status">Sunny</div>
                         <button class="btn-more-details" id="btn-more-details-day-one" onclick="moreDetailsDayOne()" >More Detais</button>
                     </div>
@@ -476,8 +477,8 @@
                 <div class="next-after-two-day-sub-container">
                     <div class="next-week-sub-container-two">
                         <div class="next-week-sub-title" id="after-two-day">day 2</div>
-                        <img class="next-week-sub-img" id="after-two-day-img" src="" alt="after one hour img">
-                        <div class="next-week-sub-temp" id="after-two-day-temp">25°C</div>
+                        <img class="next-week-sub-img" id="after-two-day-img" src="assets/64x64/day/116.png" alt="after one hour img">
+                        <div class="next-week-sub-temp" id="after-two-day-temp">00 °C</div>
                         <div class="next-week-sub-status" id="after-two-day-status">Sunny</div>
                         <button class="btn-more-details" id="btn-more-details-day-two" onclick="moreDetailsDayTwo()">More Detais</button>
                     </div>
@@ -487,8 +488,8 @@
                 <div class="next-after-three-day-sub-container">
                     <div class="next-week-sub-container-two">
                         <div class="next-week-sub-title" id="after-three-day">day 3</div>
-                        <img class="next-week-sub-img" id="after-three-day-img" src="" alt="after one hour img">
-                        <div class="next-week-sub-temp" id="after-three-day-temp">25°C</div>
+                        <img class="next-week-sub-img" id="after-three-day-img" src="assets/64x64/day/116.png" alt="after one hour img">
+                        <div class="next-week-sub-temp" id="after-three-day-temp">00 °C</div>
                         <div class="next-week-sub-status" id="after-three-day-status">Sunny</div>
                         <button class="btn-more-details" id="btn-more-details-day-three" onclick="moreDetailsDayThree()">More Detais</button>
                     </div>
@@ -498,8 +499,8 @@
                 <div class="next-after-four-day-sub-container">
                     <div class="next-week-sub-container-two">
                         <div class="next-week-sub-title" id="after-four-day">day 4</div>
-                        <img class="next-week-sub-img" id="after-four-day-img" src="" alt="after one hour img">
-                        <div class="next-week-sub-temp" id="after-four-day-temp">25°C</div>
+                        <img class="next-week-sub-img" id="after-four-day-img" src="assets/64x64/day/116.png" alt="after one hour img">
+                        <div class="next-week-sub-temp" id="after-four-day-temp">00 °C</div>
                         <div class="next-week-sub-status" id="after-four-day-status">Sunny</div>
                         <button class="btn-more-details" id="btn-more-details-day-fore" onclick="moreDetailsDayFour()">More Detais</button>
                     </div>
@@ -509,8 +510,8 @@
                 <div class="next-after-five-day-sub-container">
                     <div class="next-week-sub-container-two">
                         <div class="next-week-sub-title" id="after-five-day">day 5</div>
-                        <img class="next-week-sub-img" id="after-five-day-img" src="" alt="after one hour img">
-                        <div class="next-week-sub-temp" id="after-five-day-temp">25°C</div>
+                        <img class="next-week-sub-img" id="after-five-day-img" src="assets/64x64/day/116.png" alt="after one hour img">
+                        <div class="next-week-sub-temp" id="after-five-day-temp">00 °C</div>
                         <div class="next-week-sub-status" id="after-five-day-status">Sunny</div>
                         <button class="btn-more-details" id="btn-more-details-day-five" onclick="moreDetailsDayFive()">More Detais</button>
                     </div>
@@ -520,8 +521,8 @@
                 <div class="next-after-six-day-sub-container">
                     <div class="next-week-sub-container-two">
                         <div class="next-week-sub-title" id="after-six-day">day 6</div>
-                        <img class="next-week-sub-img" id="after-six-day-img" src="" alt="after one hour img">
-                        <div class="next-week-sub-temp" id="after-six-day-temp">25°C</div>
+                        <img class="next-week-sub-img" id="after-six-day-img" src="assets/64x64/day/116.png" alt="after one hour img">
+                        <div class="next-week-sub-temp" id="after-six-day-temp">00 °C</div>
                         <div class="next-week-sub-status" id="after-six-day-status">Sunny</div>
                         <button class="btn-more-details" id="btn-more-details-day-six" onclick="moreDetailsDaySix()">More Detais</button>
                         
@@ -535,7 +536,7 @@
                         <div class="next-week-forcast-details-raw">
                             <div class="next-week-forcast-details-raw-inner">
                                 <div class="next-week-forcast-details-raw-title">Maximum temperature</div>
-                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-max-temp">00</div>
+                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-max-temp">00 °C</div>
                             </div>
                         </div>
                     </div>
@@ -545,7 +546,7 @@
                         <div class="next-week-forcast-details-raw">
                             <div class="next-week-forcast-details-raw-inner">
                                 <div class="next-week-forcast-details-raw-title">Minimum temperature</div>
-                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-min-temp">00</div>
+                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-min-temp">00 °C</div>
                             </div>
                         </div>
                     </div>
@@ -555,7 +556,7 @@
                         <div class="next-week-forcast-details-raw">
                             <div class="next-week-forcast-details-raw-inner">
                                 <div class="next-week-forcast-details-raw-title">Daily chance of the rain</div>
-                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-israin">00</div>
+                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-israin">00 %</div>
                             </div>
                         </div>
                     </div>
@@ -565,7 +566,7 @@
                         <div class="next-week-forcast-details-raw">
                             <div class="next-week-forcast-details-raw-inner">
                                 <div class="next-week-forcast-details-raw-title">Daily chance of the snow</div>
-                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-is-snow">00</div>
+                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-is-snow">00 %</div>
                             </div>
                         </div>
                     </div>
@@ -575,7 +576,7 @@
                         <div class="next-week-forcast-details-raw">
                             <div class="next-week-forcast-details-raw-inner">
                                 <div class="next-week-forcast-details-raw-title">Total precipitation</div>
-                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-avg-precipitation">00</div>
+                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-avg-precipitation">00 mm</div>
                             </div>
                         </div>
                     </div>
@@ -585,7 +586,7 @@
                         <div class="next-week-forcast-details-raw">
                             <div class="next-week-forcast-details-raw-inner">
                                 <div class="next-week-forcast-details-raw-title">Average visibility</div>
-                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-avg-visibility">00</div>
+                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-avg-visibility">00 km</div>
                             </div>
                         </div>
                     </div>
@@ -595,7 +596,7 @@
                         <div class="next-week-forcast-details-raw">
                             <div class="next-week-forcast-details-raw-inner">
                                 <div class="next-week-forcast-details-raw-title">Average humidity</div>
-                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-avg-humidity">00</div>
+                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-avg-humidity">00 %</div>
                             </div>
                         </div>
                     </div>
@@ -625,7 +626,7 @@
                         <div class="next-week-forcast-details-raw">
                             <div class="next-week-forcast-details-raw-inner">
                                 <div class="next-week-forcast-details-raw-title">Sunset</div>
-                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-sunset">25 °C</div>
+                                <div class="next-week-forcast-details-raw-value" id="btn-more-details-day-one-sunset">00.00</div>
                             </div>
                         </div>
                     </div>
@@ -657,10 +658,10 @@
             </div>
             <div class="weather-history-details-container">
                 <div class="weather-history-main-details-container">
-                    <div class="weather-history-search-date" id="weather-history-search-date">dd/mm/yyyy</div>
+                    <div class="weather-history-search-date" id="weather-history-search-date">yyyy-mm-dd</div>
                     <div class="weather-history-search-date-at" id="weather-history-search-date">at</div>
                     <div class="weather-history-search-location-name" id="weather-history-search-location">Location</div>
-                    <div class="weather-history-search-date-avg-tmp" id="weather-history-search-date-avg-tmp">25°C</div>
+                    <div class="weather-history-search-date-avg-tmp" id="weather-history-search-date-avg-tmp">00 °C</div>
                     <div class="weather-history-search-date-condition" id="weather-history-search-date-condition">condition</div>
                     <div>
                         <img class="weather-history-search-date-condition-img" id="weather-history-search-date-condition-img" src="assets/64x64/day/176.png" alt="weather condition img">
@@ -671,7 +672,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Maximum temperature</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-max-temp">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-max-temp">00 °C</div>
                             </div>
                         </div>
                     </div>
@@ -679,7 +680,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Minimum temperature</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-min-temp">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-min-temp">00 °C</div>
                             </div>
                         </div>
                     </div>
@@ -687,7 +688,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Maximum wind speed</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-max-wind-spreed">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-max-wind-spreed">00 kph</div>
                             </div>
                         </div>
                     </div>
@@ -695,7 +696,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Total precipitation</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-tot-precipitation">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-tot-precipitation">00 mm</div>
                             </div>
                         </div>
                     </div>
@@ -703,7 +704,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Average visibility</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-avg-isibility">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-avg-isibility">00 km</div>
                             </div>
                         </div>
                     </div>
@@ -711,7 +712,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Average humidity</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-avg-humidity">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-avg-humidity">00 %</div>
                             </div>
                         </div>
                     </div>
@@ -719,7 +720,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">UV Index</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-uv-index">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-uv-index">00</div>
                             </div>
                         </div>
                     </div>
@@ -727,7 +728,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Sunrise</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-sunrise">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-sunrise">00.00</div>
                             </div>
                         </div>
                     </div>
@@ -735,7 +736,7 @@
                         <div class="weather-history-search-date-details-secondry-container">
                             <div class="weather-history-search-date-details-text-container">
                                 <div class="weather-history-search-date-details-text">Sunset</div>
-                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-sunset">25°C</div>
+                                <div class="weather-history-search-date-details-unit" id="weather-history-search-date-details-sunset">00.00</div>
                             </div>
                         </div>
                     </div>

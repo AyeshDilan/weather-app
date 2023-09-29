@@ -360,13 +360,13 @@ function moreDetailsDayOne(){
         success: (resp) => {
             console.log(resp);
            
-            moreDetailsMaxTemp.text((resp.forecast.forecastday[1].day.maxtemp_c)+"°C");
-            moreDetailsMinTemp.text((resp.forecast.forecastday[1].day.mintemp_c)+"°C");
-            moreDetailsChanceToRain.text((resp.forecast.forecastday[1].day.daily_chance_of_rain)+"%");
-            moreDetailsChanceToSnow.text((resp.forecast.forecastday[1].day.daily_chance_of_snow)+"%");
-            moreDetailsPrecipitation.text((resp.forecast.forecastday[1].day.totalprecip_mm)+"mm");
-            moreDetailsAvgVisibility.text((resp.forecast.forecastday[1].day.avgvis_km)+"km");
-            moreDetailsAvgHumidity.text((resp.forecast.forecastday[1].day.avghumidity)+"%");
+            moreDetailsMaxTemp.text((resp.forecast.forecastday[1].day.maxtemp_c)+" °C");
+            moreDetailsMinTemp.text((resp.forecast.forecastday[1].day.mintemp_c)+" °C");
+            moreDetailsChanceToRain.text((resp.forecast.forecastday[1].day.daily_chance_of_rain)+" %");
+            moreDetailsChanceToSnow.text((resp.forecast.forecastday[1].day.daily_chance_of_snow)+" %");
+            moreDetailsPrecipitation.text((resp.forecast.forecastday[1].day.totalprecip_mm)+" mm");
+            moreDetailsAvgVisibility.text((resp.forecast.forecastday[1].day.avgvis_km)+" km");
+            moreDetailsAvgHumidity.text((resp.forecast.forecastday[1].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[1].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[1].astro.sunrise);
             moreDetailsSunset.text(resp.forecast.forecastday[1].astro.sunset);
@@ -383,13 +383,13 @@ function moreDetailsDayTwo(){
         success: (resp) => {
             console.log(resp);
            
-            moreDetailsMaxTemp.text((resp.forecast.forecastday[2].day.maxtemp_c)+"°C");
-            moreDetailsMinTemp.text((resp.forecast.forecastday[2].day.mintemp_c)+"°C");
-            moreDetailsChanceToRain.text((resp.forecast.forecastday[2].day.daily_chance_of_rain)+"%");
-            moreDetailsChanceToSnow.text((resp.forecast.forecastday[2].day.daily_chance_of_snow)+"%");
-            moreDetailsPrecipitation.text((resp.forecast.forecastday[2].day.totalprecip_mm)+"mm");
-            moreDetailsAvgVisibility.text((resp.forecast.forecastday[2].day.avgvis_km)+"km");
-            moreDetailsAvgHumidity.text((resp.forecast.forecastday[2].day.avghumidity)+"%");
+            moreDetailsMaxTemp.text((resp.forecast.forecastday[2].day.maxtemp_c)+" °C");
+            moreDetailsMinTemp.text((resp.forecast.forecastday[2].day.mintemp_c)+" °C");
+            moreDetailsChanceToRain.text((resp.forecast.forecastday[2].day.daily_chance_of_rain)+" %");
+            moreDetailsChanceToSnow.text((resp.forecast.forecastday[2].day.daily_chance_of_snow)+" %");
+            moreDetailsPrecipitation.text((resp.forecast.forecastday[2].day.totalprecip_mm)+" mm");
+            moreDetailsAvgVisibility.text((resp.forecast.forecastday[2].day.avgvis_km)+" km");
+            moreDetailsAvgHumidity.text((resp.forecast.forecastday[2].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[2].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[2].astro.sunrise);
             moreDetailsSunset.text(resp.forecast.forecastday[2].astro.sunset);       
@@ -405,13 +405,12 @@ function moreDetailsDayThree(){
         success: (resp) => {
             console.log(resp);
            
-            moreDetailsMaxTemp.text((resp.forecast.forecastday[3].day.maxtemp_c)+"°C");
-            moreDetailsMinTemp.text((resp.forecast.forecastday[3].day.mintemp_c)+"°C");
-            moreDetailsChanceToRain.text((resp.forecast.forecastday[3].day.daily_chance_of_rain)+"%");
-            moreDetailsChanceToSnow.text((resp.forecast.forecastday[3].day.daily_chance_of_snow)+"%");
-            moreDetailsPrecipitation.text((resp.forecast.forecastday[3].day.totalprecip_mm)+"mm");
-            moreDetailsAvgVisibility.text((resp.forecast.forecastday[3].day.avgvis_km)+"km");
-            moreDetailsAvgHumidity.text((resp.forecast.forecastday[3].day.avghumidity)+"%");
+            moreDetailsMinTemp.text((resp.forecast.forecastday[3].day.mintemp_c)+" °C");
+            moreDetailsChanceToRain.text((resp.forecast.forecastday[3].day.daily_chance_of_rain)+" %");
+            moreDetailsChanceToSnow.text((resp.forecast.forecastday[3].day.daily_chance_of_snow)+" %");
+            moreDetailsPrecipitation.text((resp.forecast.forecastday[3].day.totalprecip_mm)+" mm");
+            moreDetailsAvgVisibility.text((resp.forecast.forecastday[3].day.avgvis_km)+" km");
+            moreDetailsAvgHumidity.text((resp.forecast.forecastday[3].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[3].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[3].astro.sunrise);
             moreDetailsSunset.text(resp.forecast.forecastday[3].astro.sunset);
@@ -428,13 +427,13 @@ function moreDetailsDayFour(){
         success: (resp) => {
             console.log(resp);
            
-            moreDetailsMaxTemp.text((resp.forecast.forecastday[4].day.maxtemp_c)+"°C");
-            moreDetailsMinTemp.text((resp.forecast.forecastday[4].day.mintemp_c)+"°C");
-            moreDetailsChanceToRain.text((resp.forecast.forecastday[4].day.daily_chance_of_rain)+"%");
-            moreDetailsChanceToSnow.text((resp.forecast.forecastday[4].day.daily_chance_of_snow)+"%");
-            moreDetailsPrecipitation.text((resp.forecast.forecastday[4].day.totalprecip_mm)+"mm");
-            moreDetailsAvgVisibility.text((resp.forecast.forecastday[4].day.avgvis_km)+"km");
-            moreDetailsAvgHumidity.text((resp.forecast.forecastday[4].day.avghumidity)+"%");
+            moreDetailsMaxTemp.text((resp.forecast.forecastday[4].day.maxtemp_c)+" °C");
+            moreDetailsMinTemp.text((resp.forecast.forecastday[4].day.mintemp_c)+" °C");
+            moreDetailsChanceToRain.text((resp.forecast.forecastday[4].day.daily_chance_of_rain)+" %");
+            moreDetailsChanceToSnow.text((resp.forecast.forecastday[4].day.daily_chance_of_snow)+" %");
+            moreDetailsPrecipitation.text((resp.forecast.forecastday[4].day.totalprecip_mm)+" mm");
+            moreDetailsAvgVisibility.text((resp.forecast.forecastday[4].day.avgvis_km)+" km");
+            moreDetailsAvgHumidity.text((resp.forecast.forecastday[4].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[4].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[4].astro.sunrise);
             moreDetailsSunset.text(resp.forecast.forecastday[4].astro.sunset);
@@ -451,13 +450,13 @@ function moreDetailsDayFive(){
         success: (resp) => {
             console.log(resp);
            
-            moreDetailsMaxTemp.text((resp.forecast.forecastday[5].day.maxtemp_c)+"°C");
-            moreDetailsMinTemp.text((resp.forecast.forecastday[5].day.mintemp_c)+"°C");
-            moreDetailsChanceToRain.text((resp.forecast.forecastday[5].day.daily_chance_of_rain)+"%");
-            moreDetailsChanceToSnow.text((resp.forecast.forecastday[5].day.daily_chance_of_snow)+"%");
-            moreDetailsPrecipitation.text((resp.forecast.forecastday[5].day.totalprecip_mm)+"mm");
-            moreDetailsAvgVisibility.text((resp.forecast.forecastday[5].day.avgvis_km)+"km");
-            moreDetailsAvgHumidity.text((resp.forecast.forecastday[5].day.avghumidity)+"%");
+            moreDetailsMaxTemp.text((resp.forecast.forecastday[5].day.maxtemp_c)+" °C");
+            moreDetailsMinTemp.text((resp.forecast.forecastday[5].day.mintemp_c)+" °C");
+            moreDetailsChanceToRain.text((resp.forecast.forecastday[5].day.daily_chance_of_rain)+" %");
+            moreDetailsChanceToSnow.text((resp.forecast.forecastday[5].day.daily_chance_of_snow)+" %");
+            moreDetailsPrecipitation.text((resp.forecast.forecastday[5].day.totalprecip_mm)+" mm");
+            moreDetailsAvgVisibility.text((resp.forecast.forecastday[5].day.avgvis_km)+" km");
+            moreDetailsAvgHumidity.text((resp.forecast.forecastday[5].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[5].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[5].astro.sunrise);
             moreDetailsSunset.text(resp.forecast.forecastday[5].astro.sunset);
@@ -474,13 +473,13 @@ function moreDetailsDaySix(){
         success: (resp) => {
             console.log(resp);
            
-            moreDetailsMaxTemp.text((resp.forecast.forecastday[6].day.maxtemp_c)+"°C");
-            moreDetailsMinTemp.text((resp.forecast.forecastday[6].day.mintemp_c)+"°C");
-            moreDetailsChanceToRain.text((resp.forecast.forecastday[6].day.daily_chance_of_rain)+"%");
-            moreDetailsChanceToSnow.text((resp.forecast.forecastday[6].day.daily_chance_of_snow)+"%");
-            moreDetailsPrecipitation.text((resp.forecast.forecastday[6].day.totalprecip_mm)+"mm");
-            moreDetailsAvgVisibility.text((resp.forecast.forecastday[6].day.avgvis_km)+"km");
-            moreDetailsAvgHumidity.text((resp.forecast.forecastday[6].day.avghumidity)+"%");
+            moreDetailsMaxTemp.text((resp.forecast.forecastday[6].day.maxtemp_c)+" °C");
+            moreDetailsMinTemp.text((resp.forecast.forecastday[6].day.mintemp_c)+" °C");
+            moreDetailsChanceToRain.text((resp.forecast.forecastday[6].day.daily_chance_of_rain)+" %");
+            moreDetailsChanceToSnow.text((resp.forecast.forecastday[6].day.daily_chance_of_snow)+" %");
+            moreDetailsPrecipitation.text((resp.forecast.forecastday[6].day.totalprecip_mm)+ "mm");
+            moreDetailsAvgVisibility.text((resp.forecast.forecastday[6].day.avgvis_km)+" km");
+            moreDetailsAvgHumidity.text((resp.forecast.forecastday[6].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[6].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[6].astro.sunrise);
             moreDetailsSunset.text(resp.forecast.forecastday[6].astro.sunset);

@@ -218,7 +218,7 @@
     padding: 15px;
     left: 464px; 
     top: 143px; 
-    position: absolute;
+    position: relative;
     font-family: Inter; 
     font-weight: 700; 
     font-size:28px;
@@ -228,31 +228,29 @@
     border: 1px rgba(248.63, 222.73, 222.73, 0.17) solid; 
     justify-content: flex-start; 
     align-items: flex-start; 
-    gap: 20px; 
+    gap: 100px; 
     display: inline-flex;
 }
 
 .date-container{
     width: 840px; 
     height: 43px; 
-    top: 10px;
     text-align: left; 
     color: white; 
     font-size: 30px; 
     font-family: Inter; 
     font-weight: 700; 
     word-wrap: nowrap !important;
-    border: 1px rgb(238, 228, 228) solid; 
 }
 
 .time-container{
+    width: 200px;
     color: white; 
+    text-align: left;
     font-size: 30px; 
     font-family: Inter; 
-    font-weight: 700; 
-    align-items: baseline;
-    word-wrap: break-word;
-    border: 1px rgb(248, 242, 242) solid; 
+    font-weight: 700;
+
 }
 
 /*current weather panel*/
@@ -1591,7 +1589,7 @@
 }
 
 .weather-history-container-discription{
-    width: 585px; 
+    width: 565px; 
     height: 49px; 
     text-align: center; 
     padding: 2%;
