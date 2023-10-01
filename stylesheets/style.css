@@ -97,28 +97,26 @@ body{
 .manu-container{
     width: 2000px;
 }
-/*------------------------------------*/
+
 *{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-ul{
-    /* height: 50px; */
-    /* margin-top: 20px; */
+.menu-container {
+    width: 2000px;
     padding-top: 20px;
     list-style: none;
     background: none;
 }
 
-ul li {
+.menu-item {
     display: inline-block;
     position: relative;
 }
-ul li a {
+
+.menu-item a {
     display: block;
     padding: 10px 25px;
     color: aliceblue;
@@ -127,27 +125,26 @@ ul li a {
     font-size: 23px;
 }
 
-ul li ul.dropdown li {
+.dropdown-item {
     display: block;
 }
 
-ul li ul.dropdown {
+.dropdown {
     width: 100%;
-    background: rgb(27, 27, 201);
+    background: rgb(68, 18, 161);
     position: absolute;
     z-index: 999;
     display: none;
 }
 
-ul li a:hover {
-    background: rgb(22, 20, 167);
-}
-
-ul li:hover ul.dropdown {
+.menu-item:hover .dropdown {
     display: block;
 }
 
-/*-------------------------------------*/
+.menu-item a:hover {
+    background: rgb(67, 8, 145);
+}
+
 .manu-item{
     height: 29px; 
     justify-content: flex-start; 
