@@ -47,17 +47,12 @@
     
 }
 
-body{
-
-}
-
 .main-container{
-    width:1335px; 
+    width:1329px; 
     height: 3500px; 
     left: 0px;
-    position: absolute;
+    position: absolute; 
     background: linear-gradient(180deg, #5936B4 0%, #362A84 100%); border: 2px black solid;
-
 }
 
 /*manu bar*/
@@ -69,11 +64,10 @@ body{
 }
 
 .manu-section{
-    width: 1212px;
-    padding-left: 35px;
-    /* justify-content: flex-start;  */
-    /* align-items: center;  */
-    gap: 50px; 
+    width: 1212px; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 100px; 
     display: inline-flex;   
 }
 
@@ -91,101 +85,31 @@ body{
     height: 75px; 
     background: linear-gradient(180deg, #5936B4 0%, #362A84 100%); 
     border: 1px black solid;
-    
 }
 
-.manu-container{
-    width: 2000px;
-}
-/*------------------------------------*/
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-ul{
-    /* height: 50px; */
-    /* margin-top: 20px; */
-    padding-top: 20px;
-    list-style: none;
-    background: none;
-}
-
-ul li {
-    display: inline-block;
-    position: relative;
-}
-ul li a {
-    display: block;
-    padding: 10px 25px;
-    color: aliceblue;
-    text-decoration: none;
-    text-align: left;
-    font-size: 23px;
-}
-
-ul li ul.dropdown li {
-    display: block;
-}
-
-ul li ul.dropdown {
-    width: 100%;
-    background: rgb(27, 27, 201);
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-
-ul li a:hover {
-    background: rgb(22, 20, 167);
-}
-
-ul li:hover ul.dropdown {
-    display: block;
-}
-
-/*-------------------------------------*/
 .manu-item{
     height: 29px; 
     justify-content: flex-start; 
     align-items: flex-start; 
     gap: 70px; 
     display: flex;
-    z-index: 100;
-    
 }
 
 .manu-item-text{
-    display: block;
     color: white; 
-    text-align: center;
     font-size: 24px; 
     font-family: Inter; 
     font-weight: 400; 
     font-style: normal;
     text-wrap: nowrap;
     text-decoration: none;
-    
-}
-
-.manu-item li a:hover {
-    background-color: #412382;
-    color: black;
-}
-
-.menu li:hover .submenu {
-    display: block;
 }
 
 .manu-buttons{
     display: flex;
     width: 1212px;
-    padding-left: 120px;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     bottom: 5px;
 }
 
@@ -237,7 +161,6 @@ ul li:hover ul.dropdown {
     align-items: flex-start; 
     gap: 17px; 
     display: inline-flex;
-   
 }
 
 .input-container {
@@ -254,7 +177,6 @@ ul li:hover ul.dropdown {
     display: flex;
     margin-left: 100px;
     border-radius: 10px;
-    z-index: 99;
   }
 
 .search-box{
@@ -306,12 +228,12 @@ ul li:hover ul.dropdown {
     border: 1px rgba(248.63, 222.73, 222.73, 0.17) solid; 
     justify-content: flex-start; 
     align-items: flex-start; 
-    gap: 20px; 
+    gap: 100px; 
     display: inline-flex;
 }
 
 .date-container{
-    width: 940px; 
+    width: 840px; 
     height: 43px; 
     text-align: left; 
     color: white; 
@@ -322,7 +244,7 @@ ul li:hover ul.dropdown {
 }
 
 .time-container{
-    width: 190px;
+    width: 200px;
     color: white; 
     text-align: left;
     font-size: 30px; 
@@ -353,7 +275,7 @@ ul li:hover ul.dropdown {
 .Current-weather-title{
     width: 350px; 
     height: 31px;
-    top: -0px; 
+    top: -30px; 
     position: relative;
     color: white; 
     font-size: 40px; 
@@ -373,7 +295,7 @@ ul li:hover ul.dropdown {
     width:max-content; 
     height:max-content; 
     left: 130px; 
-    top: 150px; 
+    top: 60px; 
     scale: 4;
     position: relative; 
     border-radius: 16px;
@@ -383,7 +305,7 @@ ul li:hover ul.dropdown {
     width: 354px; 
     height: 44px; 
     position: relative;
-    top: -160px;
+    top: -230px;
     color: white; 
     font-size: 30px; 
     font-family: Inter; 
@@ -397,7 +319,7 @@ ul li:hover ul.dropdown {
     width: 354px; 
     height: 82px; 
     position: relative;
-    top: 20px;
+    top: -20px;
     color: white; 
     font-size: 80px; 
     font-family: Inter; 
@@ -410,10 +332,10 @@ ul li:hover ul.dropdown {
 .current-weather-status{
     width: 350px; 
     height: 30px; 
-    top: 30px;
     position: relative;
+    top: -15px;
     color: white; 
-    font-size: 25px; 
+    font-size: 20px; 
     font-family: Inter; 
     font-weight: 500; 
     text-align: center;

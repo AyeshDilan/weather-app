@@ -31,8 +31,6 @@ setInterval(updateTime, 1000);
 const inputValue = document.getElementById("search-box");
 const searchedLocation = $("#seach-location");
 
-
-
 //map
 var map = $("#map");
 
@@ -369,8 +367,7 @@ function moreDetailsDayOne(){
             moreDetailsAvgHumidity.text((resp.forecast.forecastday[1].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[1].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[1].astro.sunrise);
-            moreDetailsSunset.text(resp.forecast.forecastday[1].astro.sunset);
-                  
+            moreDetailsSunset.text(resp.forecast.forecastday[1].astro.sunset);       
         }
     });
 }
@@ -413,8 +410,7 @@ function moreDetailsDayThree(){
             moreDetailsAvgHumidity.text((resp.forecast.forecastday[3].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[3].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[3].astro.sunrise);
-            moreDetailsSunset.text(resp.forecast.forecastday[3].astro.sunset);
-                  
+            moreDetailsSunset.text(resp.forecast.forecastday[3].astro.sunset);         
         }
     });
 }
@@ -436,8 +432,7 @@ function moreDetailsDayFour(){
             moreDetailsAvgHumidity.text((resp.forecast.forecastday[4].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[4].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[4].astro.sunrise);
-            moreDetailsSunset.text(resp.forecast.forecastday[4].astro.sunset);
-                  
+            moreDetailsSunset.text(resp.forecast.forecastday[4].astro.sunset);       
         }
     });
 }
@@ -459,8 +454,7 @@ function moreDetailsDayFive(){
             moreDetailsAvgHumidity.text((resp.forecast.forecastday[5].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[5].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[5].astro.sunrise);
-            moreDetailsSunset.text(resp.forecast.forecastday[5].astro.sunset);
-                  
+            moreDetailsSunset.text(resp.forecast.forecastday[5].astro.sunset);       
         }
     });
 }
@@ -482,8 +476,7 @@ function moreDetailsDaySix(){
             moreDetailsAvgHumidity.text((resp.forecast.forecastday[6].day.avghumidity)+" %");
             moreDetailsUvIndex.text(resp.forecast.forecastday[6].day.uv);
             moreDetailsSunrise.text(resp.forecast.forecastday[6].astro.sunrise);
-            moreDetailsSunset.text(resp.forecast.forecastday[6].astro.sunset);
-                  
+            moreDetailsSunset.text(resp.forecast.forecastday[6].astro.sunset);     
         }
     });
 }
@@ -539,12 +532,9 @@ function getHostoryOfWeather(){
             historyWeatherUvIndex.text(resp.forecast.forecastday[0].day.uv);
             historyWeatherSunrise.text(resp.forecast.forecastday[0].astro.sunrise);
             historyWeatherSunset.text(resp.forecast.forecastday[0].astro.sunset);
-           
-            
         }
     })
     inputOfDate.value = "";
-
 }
 
 

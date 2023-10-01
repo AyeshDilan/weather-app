@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherSense</title>
+    <link rel="icon" href="assets/image/Sun Wave Logo resize.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
@@ -18,12 +19,29 @@
                     <div class="logo">
                         <img src="assets/image/Logo.png" alt="Logo">
                     </div>
-                    <div class="manu-item">
+
+                    <ul class="manu-container">
+                        <li><a href="#">home</a></li>
+                        <li>
+                            <a href="#">theme</a>
+                            <ul class="dropdown">
+                                <li><a href="#">purple</a></li>
+                                <li><a href="#">pink</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+
+                    <!-- <div class="manu-item">
                         <a class="manu-item-text" href="#">Home</a>
-                        <a class="manu-item-text" href="#">Select theame</a>
+                        <div class="sub-navi-select-theme">
+                            <a class="manu-item-text" href="#">Select theme</a>
+                        </div>
                         <a class="manu-item-text" href="#">Subscribe</a>
                         <a class="manu-item-text" href="#">Contact us</a>
-                    </div>
+                    </div> -->
+
                     <div class="manu-buttons">
                         <button class="btn-manu-log-in">Log in</button>
                         <button class="btn-manu-dark">Sing up</button>
@@ -747,17 +765,17 @@
         <div class="footer-container">
             <div class="footer-logo-container">
                 <div class="footer-logo-twiter-container" >
-                    <a href="#">
+                    <a href="https://twitter.com/">
                         <img class="footer-logo-twiter-img"  src="assets/image/twitter.png" alt="twitter img">
                     </a>
                 </div>
                 <div class="footer-logo-twiter-container" >
-                    <a href="#">
+                    <a href="https://www.instagram.com/">
                         <img class="footer-logo-twiter-img"  src="assets/image/instergram.png" alt="twitter img">
                     </a>
                 </div>
                 <div class="footer-logo-twiter-container" >
-                    <a href="#">
+                    <a href="https://www.youtube.com/">
                         <img class="footer-logo-twiter-img"  src="assets/image/youtube.png" alt="twitter img">
                     </a>
                 </div>
@@ -797,7 +815,7 @@
             <div class="footer-text-container">
                 <div class="footer-text-title">About Us</div>
                 <a href="#">
-                    <div class="footer-text-content-content">About WeatherSphere</div>
+                    <div class="footer-text-content-content">About WeatherSense</div>
                 </a>
                 <a href="#">
                     <div class="footer-text-content-content">Our Mission</div>
@@ -807,18 +825,7 @@
                 </a>
             </div>
             <div class="rights">©2023 WeatherSense All Rights Reserved.</div>
-
-
-
-
-
-
         </div>
-
-
-
-
-
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
